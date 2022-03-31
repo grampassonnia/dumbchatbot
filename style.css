@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    background-color: #023047;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    background-color: #219ebc; 
+    color: #ffb703;
+    border-bottom: 2px solid #fb8500;
+    padding: 10px;
+    font-size: 1.2em;
+    align-content: center;
+}
+
+.conversation {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    height: 70%;
+    overflow-y: scroll;
+    align-content: center;
+    margin: 0 10%;
+}
+
+.bot {
+    color: #023047;
+    background-color: #8ecae6;
+    border-radius: 10px 10px 10px 0;
+    max-width: 65%;
+    padding: 10px;
+    margin: 20px 0;
+    overflow-wrap: break-word;
+}
+
+.user {
+    color: #e0eaf5;
+    background-color: #219ebc;
+    overflow-wrap: break-word;
+    border-radius: 10px 10px 0 10px;
+    max-width: 65%;
+    padding: 10px;
+    margin-left: 35%;
+    text-align: right;
+}
+
+textarea {
+    resize: none;
+    font-family: Roboto, sans-serif;
+    background-color: #e0eaf5;
+    border-radius: 6px 6px 0 6px;
+    width: 60vh;
+    height: 50px;
+    border: 2px solid #fb8500;
+}
+
+textarea:focus,
+.send:focus {   
+    outline: none;
+}
+
+.send {
+    height: 54px;
+    width: 54px;
+    margin-left: 10px;
+    background-color: #fb8500;
+    color: #023047;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid transparent;
+}
+
+.send:hover {
+    height: 54px;
+    width: 54px;
+    margin-left: 10px;
+    background-color: #fb8500;
+    color: #023047;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid transparent;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    width: 100%;
+    background-color:#023047;
+}
+
+.date {
+    font-style: italic;
+    font-size: 0.75em;
+    padding-top: 4px;
+}
